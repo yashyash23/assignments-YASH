@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cool box</title>
+    <style>
+/*A reasonable width for a large box, say around 200 pixels.
+A reasonable height for a large box, centering the text vertically in the process.
+Center the box horizontally.*/
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      div {
+        width: 200px;
+        height: 200px; 
+        border: 2px solid blue;
+        padding: 20px;
+        text-align: center;
+        background-color: #f0f0f0;
+        color: #333;
+    /*Center the text within the box.
+A slight increase in font size, to around 17-18 pixel computed style. Use rems. Write a comment about how you worked out the value.*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      div p {
+        font-size: 1.125rem; 
+      }
+    </style>
+  </head>
+  <body>
+    <div>This is a cool box</div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cool box</title>
+    <style>
+/*A reasonable width for a large box, say around 200 pixels.
+A reasonable height for a large box, centering the text vertically in the process.
+Center the box horizontally.*/
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      div {
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        text-align: center;
+        background: linear-gradient(to bottom right, transparent 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%), #0011ff;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Standard box shadow for a raised effect */
+        box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.5) inset, -4px -4px 8px rgba(0, 0, 0, 0.5) inset; /* Two inset box shadows for a 3D look */
+      }
+/*A base color for the design. Give the box this color as its background color.
+A contrasting color for the text and a black text shadow.*/
+      div p {
+        font-size: 1.125rem; 
+        text-shadow: 1px 1px 2px black; 
+      }
+    </style>
+  </head>
+  <body>
+    <div>This is a cool box</div>
+  </body>
+</html>
